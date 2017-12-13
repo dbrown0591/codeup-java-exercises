@@ -6,10 +6,12 @@ public class Input {
     private Scanner scan;
 
     public Input() {
+
         this.scan = new Scanner(System.in);
     }
 
     public String getString() {
+
         return this.scan.nextLine();
     }
 
@@ -63,7 +65,18 @@ public class Input {
     }
 
     public int getInt() {
-        return this.scan.nextInt();
+
+           String userInput = this.scan.next();
+
+
+            try{
+            return Integer.valueOf(userInput);
+        }catch(NumberFormatException e){
+                System.out.println("Your input must be a number");
+                System.out.println(e.getMessage());
+                return getInt();
+            }
+
     }
 
     public int getInt(String prompt) {
@@ -96,7 +109,15 @@ public class Input {
     }
 
     public double getDouble() {
-        return this.scan.nextDouble();
+        String userInput = scan.next();
+
+        try{
+            return Double.valueOf(userInput);
+        }catch(NumberFormatException e){
+            System.out.println("Your input must be a number");
+            System.out.println(e.getMessage());
+            return getDouble();
+        }
     }
 
     public double getDouble(String prompt) {
