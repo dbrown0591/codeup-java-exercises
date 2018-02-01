@@ -20,7 +20,8 @@ public class Square extends Quadrilateral {
         return 2 * length + 2 * width;
 
     }
-    public Square(double length, double width) {
+    public Square(double length, double width)
+    {
         super(length, width);
     }
 
