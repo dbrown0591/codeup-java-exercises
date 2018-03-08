@@ -1,3 +1,5 @@
+package game;
+
 public class Player {
     int number = 0;//Where the guess goes
 

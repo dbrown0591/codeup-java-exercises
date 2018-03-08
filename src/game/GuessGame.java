@@ -1,5 +1,7 @@
+package game;
+
 public class GuessGame {
-    Player p1;
+    Player p1;//These are three instance variables 
     Player p2;
     Player p3;
 
@@ -16,7 +18,7 @@ public class GuessGame {
         boolean p2isRight = false;
         boolean p3isRight = false;
 
-        int targetNumber = (int)(Math.random()* 10);
+        int targetNumber = (int)(Math.random()* 10);//Make a target number that the player has to guess
         System.out.println("I'm thinking of a number between 0 and 9 ");
 
         while(true){
@@ -51,7 +53,7 @@ public class GuessGame {
                 System.out.println("Player one got it right? " + p1isRight);
                 System.out.println("Player two got it right? " + p2isRight);
                 System.out.println("Player three got it right? " + p3isRight);
-                System.out.println("Game is over....");
+                System.out.println("game is over....");
                 break;
             }
             else{

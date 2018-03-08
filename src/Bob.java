@@ -14,7 +14,7 @@ public class Bob {
         //Bob answers "Whoa, chill out! if you yell(Yelling is all uppercase or ending with a  ! character
         boolean isYelling = userInput.equals(userInput.toUpperCase()) || userInput.endsWith("!");
 
-        //Bob say "Fine. Be that way" if you don't actually say anythig
+        //Bob say "Fine. Be that way" if you don't actually say anything
         boolean didNotSayAnything = userInput.trim().isEmpty();
 
         if(endsWithQuestionMark){
