@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class Arithmetic {
 
-
-    //// 1).
     public static int addition(int add1, int add2) {
         return add1 + add2;
     }
@@ -23,7 +21,6 @@ public class Arithmetic {
     public static int modulus(int mod1, int mod2) {
         return mod1 % mod2;
     }
-
 
 
     public static void main(String[] args) {
@@ -86,13 +83,6 @@ public class Arithmetic {
         int mod2 = r.nextInt();
         System.out.println(modulus(mod1, mod2));
         System.out.println("Congratulations!!! Your all done!!");
-        return;
-
 
     }
-
-
-
-
         }
-
