@@ -3,7 +3,9 @@ package PACKAGE_NAME;
 import java.util.Scanner;
 
 public class Range {
+
     public static void main(String[] args){
+
 
         System.out.println(getInteger(1,10));
     }
